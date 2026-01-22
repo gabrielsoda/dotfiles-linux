@@ -111,3 +111,4 @@ alias ll="ls -lah"   # List all, long format, human readable sizes
 
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
+export PATH="$PATH:/snap/bin"
