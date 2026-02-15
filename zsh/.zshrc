@@ -109,8 +109,6 @@ alias reload="source ~/.zshrc"
 # Useful LS aliases (if you don't have them already)
 alias ll="ls -lah"   # List all, long format, human readable sizes
 
-export PATH="$PATH:/snap/bin"
-
 . "$HOME/.local/bin/env"
 
 export NVM_DIR="$HOME/.nvm"
