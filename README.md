@@ -12,6 +12,8 @@ dotfiles/
 │   └── .config/
 │       └── micro/
 │           └── settings.json   # Configuración del editor micro
+├── tmux/
+│   └── .tmux.conf       # Configuración de Tmux (multiplexor de terminal)
 └── README.md
 ```
 
@@ -30,6 +32,7 @@ dotfiles/
 - **eza** — ls moderno con colores
 - **tldr** — man pages simplificadas
 - **micro** — editor de texto en terminal con atajos convencionales
+- **tmux** — multiplexor de terminal (sesiones persistentes, splits, tabs)
 
 ## Restauración
 
@@ -38,7 +41,7 @@ dotfiles/
 ```bash
 # Zsh y utilidades
 sudo apt update
-sudo apt install -y zsh stow git curl fzf ripgrep bat micro
+sudo apt install -y zsh stow git curl fzf ripgrep bat micro tmux
 
 # tldr y eza via snap
 sudo snap install tldr
@@ -82,7 +85,8 @@ rm ~/.zshrc
 ```bash
 cd ~/dotfiles
 stow zsh
-stow micro  # si existe el paquete
+stow micro
+stow tmux
 ```
 
 ### 7. Recargar shell
@@ -104,6 +108,7 @@ rg --version
 bat --version
 eza --version
 micro --version
+tmux -V
 ```
 
 ## Uso diario
