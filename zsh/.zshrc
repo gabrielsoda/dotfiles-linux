@@ -119,3 +119,6 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(zoxide init zsh)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# opencode
+export PATH="$HOME/.opencode/bin:$PATH"
